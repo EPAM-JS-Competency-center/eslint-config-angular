@@ -1,0 +1,26 @@
+{
+  "name": "eslint-config-angular",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^3.2.5"
+  },
+  "peerDependencies": {
+    "@angular-eslint/builder": "^17.2.0",
+    "@angular-eslint/schematics": "^17.2.0",
+    "@angular-eslint/template-parser": "^17.2.0",
+    "@angular-eslint/eslint-plugin": "^17.2.0",
+    "@angular-eslint/eslint-plugin-template": "^17.2.0",
+    "@typescript-eslint/parser": "^6.19.0 || ^7",
+    "@typescript-eslint/eslint-plugin": "^6.19.0 || ^7",
+    "eslint": ">= 8",
+    "eslint-plugin-rxjs": "^5.0.3",
+    "eslint-plugin-sonarjs": "^0.24.0"
+  }
+}

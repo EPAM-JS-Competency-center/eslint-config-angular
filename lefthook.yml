@@ -1,0 +1,4 @@
+commit-msg:
+  commands:
+    lint-msg:
+      run: echo $(head -n1 {1}) | npx commitlint --color

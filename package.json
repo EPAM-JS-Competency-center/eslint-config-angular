@@ -12,7 +12,9 @@
     "name": "Sergey Gultyayev",
     "email": "gultyayev.sergey@gmail.com"
   },
-  "scripts": {},
+  "scripts": {
+    "release": "standard-version"
+  },
   "files": [
     "index.mjs",
     "index.d.mts",
@@ -31,7 +33,7 @@
     "@eslint/eslintrc": "^3.1.0",
     "@eslint/js": "^9.7.0",
     "angular-eslint": "^18.1.0",
-    "eslint": "^9.7.0",
+    "eslint": ">= 9",
     "eslint-plugin-rxjs": "^5.0.3",
     "eslint-plugin-sonarjs": "^1.0.3",
     "typescript": "^5.5.3",
@@ -43,7 +45,8 @@
     "@eslint/compat": "^1.1.1",
     "@types/eslint": "^8.56.10",
     "lefthook": "^1.7.4",
-    "prettier": "^3.2.5"
+    "prettier": "^3.2.5",
+    "standard-version": "^9.5.0"
   },
   "peerDependencies": {
     "angular-eslint": "^18.1.0",

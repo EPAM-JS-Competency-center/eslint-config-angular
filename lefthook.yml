@@ -2,3 +2,9 @@ commit-msg:
   commands:
     lint-msg:
       run: echo $(head -n1 {1}) | npx commitlint --color
+pre-commit:
+  parallel: true
+  commands:
+    prettier:
+      run: npx prettier --write --ignore-unknown {staged_files}
+      stage_fixed: true

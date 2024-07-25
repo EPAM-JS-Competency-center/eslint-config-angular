@@ -21,7 +21,30 @@ Rename your `eslint.config.js` to `eslint.config.mjs` and replace the contents w
 ```js
 import eslintConfigAngular from "@epam/eslint-config-angular";
 
-export default [...eslintConfigAngular];
+export default [
+  ...eslintConfigAngular,
+  {
+    files: ["**/*.ts"],
+    rules: {
+      "@angular-eslint/directive-selector": [
+        "error",
+        {
+          type: "attribute",
+          prefix: "app",
+          style: "camelCase",
+        },
+      ],
+      "@angular-eslint/component-selector": [
+        "error",
+        {
+          type: "element",
+          prefix: "app",
+          style: "kebab-case",
+        },
+      ],
+    },
+  },
+];
 ```
 
 ## Opting-out from rules

@@ -4,12 +4,10 @@ import angular from "angular-eslint";
 export const html = [
   ...angular.configs.templateRecommended.map((config) => ({
     ...config,
-    processor: angular.processInlineTemplates,
     files: ["**/*.html"],
   })),
   ...angular.configs.templateAccessibility.map((config) => ({
     ...config,
-    processor: angular.processInlineTemplates,
     files: ["**/*.html"],
   })),
   {

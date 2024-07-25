@@ -39,6 +39,7 @@ export const ts = [
       "rxjs/throw-error": "error",
       "rxjs/no-compat": "error",
     },
+    processor: angular.processInlineTemplates,
     languageOptions: {
       parser: tseslint.parser,
       parserOptions: {

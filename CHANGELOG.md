@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/EPAM-JS-Competency-center/eslint-config-angular/compare/v1.0.2...v1.1.0) (2024-10-24)
+
+### Features
+
+- update dependencies ([a1b9bd1](https://github.com/EPAM-JS-Competency-center/eslint-config-angular/commit/a1b9bd1ee968179d899824626b70121ca000bf37))
+
 ### [1.0.2](https://github.com/EPAM-JS-Competency-center/eslint-config-angular/compare/v1.0.1...v1.0.2) (2024-07-25)
 
 ### Bug Fixes

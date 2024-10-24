@@ -1,6 +1,6 @@
 import angular from "angular-eslint";
 
-/** @type { FlatConfig[] } */
+/** @type { import("eslint").Linter.Config[] } */
 export const html = [
   ...angular.configs.templateRecommended.map((config) => ({
     ...config,

@@ -1,10 +1,10 @@
-import { Linter } from "eslint";
+import type { Linter } from "eslint";
 
-declare const _default: Linter.FlatConfig;
+declare const _default: Linter.Config;
 
 export declare const configs: {
-  ts: Linter.FlatConfig[];
-  html: Linter.FlatConfig[];
+  ts: Linter.Config[];
+  html: Linter.Config[];
 };
 
 export default _default;

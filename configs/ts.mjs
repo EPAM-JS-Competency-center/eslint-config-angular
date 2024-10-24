@@ -5,7 +5,7 @@ import angular from "angular-eslint";
 import { fixupPluginRules } from "@eslint/compat";
 import rxjs from "eslint-plugin-rxjs";
 
-/** @type { FlatConfig[] } */
+/** @type { import("eslint").Linter.Config[] } */
 export const ts = [
   {
     ...eslint.configs.recommended,

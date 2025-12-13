@@ -29,8 +29,6 @@ export const ts = [
     rules: {
       ...rxjsX.configs.recommended.rules,
       "rxjs-x/no-floating-observables": "error",
-      "rxjs-x/no-unbound-methods": "error",
-      "rxjs-x/throw-error": "error",
       "rxjs-x/no-compat": "error",
     },
     processor: angular.processInlineTemplates,

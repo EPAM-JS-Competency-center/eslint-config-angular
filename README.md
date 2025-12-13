@@ -6,6 +6,12 @@ more plugins to ensure a smooth development process by elimination topics to dis
 There are extra rules that enforce better consistency in `*.html` and `*.ts` files, and common pitfalls when working with
 RxJS.
 
+## Requirements
+
+- Node.js 18+
+- ESLint 9+
+- Angular CLI project with flat config format (`eslint.config.mjs`)
+
 ## Quick start
 
 Before using this package, you should have [angular-eslint set up](https://github.com/angular-eslint/angular-eslint?tab=readme-ov-file#quick-start).
@@ -58,8 +64,7 @@ This package does not provide rules of its own, it only extends and applies extr
 - [@angular-eslint](https://github.com/angular-eslint/angular-eslint)
 - [eslint](https://eslint.org)
 - [@typescript-eslint](https://typescript-eslint.io)
-- [rxjs plugin](https://github.com/cartant/eslint-plugin-rxjs)
-- [sonar plugin](https://github.com/un-ts/eslint-plugin-sonar)
+- [rxjs-x plugin](https://github.com/JasonWeinzierl/eslint-plugin-rxjs-x)
 
 #### `*.html`
 
@@ -87,13 +92,10 @@ Extends:
 - eslint/recommended
 - typescript-eslint/recommended
 - typescript-eslint/stylistic
-- sonarjs/recommended
 - angular-eslint/tsRecommended
-- rxjs/recommended
+- rxjs-x/recommended
 
-| Rule                       | Value |
-| -------------------------- | ----- |
-| rxjs/no-ignored-observable | error |
-| rxjs/no-unbound-methods    | error |
-| rxjs/throw-error           | error |
-| rxjs/no-compat             | error |
+| Rule                           | Value |
+| ------------------------------ | ----- |
+| rxjs-x/no-floating-observables | error |
+| rxjs-x/no-compat               | error |

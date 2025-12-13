@@ -2,8 +2,7 @@ import eslint from "@eslint/js";
 import tseslint from "typescript-eslint";
 import sonarjs from "eslint-plugin-sonarjs";
 import angular from "angular-eslint";
-import { fixupPluginRules } from "@eslint/compat";
-import rxjs from "eslint-plugin-rxjs";
+import rxjsX from "eslint-plugin-rxjs-x";
 
 /** @type { import("eslint").Linter.Config[] } */
 export const ts = [
@@ -30,14 +29,14 @@ export const ts = [
   {
     files: ["**/*.ts"],
     plugins: {
-      rxjs: fixupPluginRules(rxjs),
+      "rxjs-x": rxjsX,
     },
     rules: {
-      ...rxjs.configs.recommended.rules,
-      "rxjs/no-ignored-observable": "error",
-      "rxjs/no-unbound-methods": "error",
-      "rxjs/throw-error": "error",
-      "rxjs/no-compat": "error",
+      ...rxjsX.configs.recommended.rules,
+      "rxjs-x/no-floating-observables": "error",
+      "rxjs-x/no-unbound-methods": "error",
+      "rxjs-x/throw-error": "error",
+      "rxjs-x/no-compat": "error",
     },
     processor: angular.processInlineTemplates,
     languageOptions: {

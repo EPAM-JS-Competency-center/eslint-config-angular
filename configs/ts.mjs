@@ -1,6 +1,5 @@
 import eslint from "@eslint/js";
 import tseslint from "typescript-eslint";
-import sonarjs from "eslint-plugin-sonarjs";
 import angular from "angular-eslint";
 import rxjsX from "eslint-plugin-rxjs-x";
 
@@ -18,10 +17,6 @@ export const ts = [
     ...config,
     files: ["**/*.ts"],
   })),
-  {
-    ...sonarjs.configs.recommended,
-    files: ["**/*.ts"],
-  },
   ...angular.configs.tsRecommended.map((config) => ({
     ...config,
     files: ["**/*.ts"],

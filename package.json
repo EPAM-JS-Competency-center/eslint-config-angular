@@ -1,6 +1,6 @@
 {
   "name": "@epam/eslint-config-angular",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "ESLint configuration for Angular projects with stricter rules and RxJS support",
   "main": "index.mjs",
   "type": "module",

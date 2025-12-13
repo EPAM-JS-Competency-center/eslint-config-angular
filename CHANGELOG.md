@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/EPAM-JS-Competency-center/eslint-config-angular/compare/v1.1.0...v2.0.0) (2025-12-13)
+
+### ⚠ BREAKING CHANGES
+
+- drop sonarjs rules
+- migrate to eslint-plugin-rxjs-x
+
+### Features
+
+- drop sonarjs rules ([b37434a](https://github.com/EPAM-JS-Competency-center/eslint-config-angular/commit/b37434a39ef11c54d3d9b86536989e9315927181))
+- migrate to eslint-plugin-rxjs-x ([4b1a0a8](https://github.com/EPAM-JS-Competency-center/eslint-config-angular/commit/4b1a0a887349af63934207d74190e3996e8f4357))
+
 ## [1.1.0](https://github.com/EPAM-JS-Competency-center/eslint-config-angular/compare/v1.0.2...v1.1.0) (2024-10-24)
 
 ### Features

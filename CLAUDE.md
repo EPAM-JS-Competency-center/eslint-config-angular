@@ -12,6 +12,7 @@ There is no build, test, or lint script. To check that the config still loads an
 node -e "import('./index.mjs').then(m => console.log(m.default.length, Object.keys(m.configs)))"
 ```
 
+- `prepublishOnly` refuses to publish if `git status` shows any change (npm packs the working tree, so uncommitted or untracked files in `configs/` would ship). It then runs the import check above.
 - `npm run release` runs `standard-version`. It bumps the version from the conventional commits, writes `CHANGELOG.md` (the `postchangelog` hook then formats it with Prettier), commits, and tags.
 - Lefthook git hooks:
   - **pre-commit** runs Prettier (default config, `.prettierrc` is `{}`) on staged files and re-stages them.

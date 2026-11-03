@@ -13,7 +13,8 @@
     "email": "gultyayev.sergey@gmail.com"
   },
   "scripts": {
-    "release": "standard-version"
+    "release": "standard-version",
+    "prepublishOnly": "if [ -n \"$(git status --porcelain)\" ]; then echo 'Uncommitted changes: commit or stash them before publishing.' >&2; exit 1; fi; node -e \"import('./index.mjs')\""
   },
   "standard-version": {
     "scripts": {

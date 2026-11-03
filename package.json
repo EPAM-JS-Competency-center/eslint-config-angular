@@ -15,6 +15,11 @@
   "scripts": {
     "release": "standard-version"
   },
+  "standard-version": {
+    "scripts": {
+      "postchangelog": "prettier --write CHANGELOG.md"
+    }
+  },
   "files": [
     "index.mjs",
     "index.d.mts",

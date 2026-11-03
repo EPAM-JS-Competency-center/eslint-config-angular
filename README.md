@@ -8,9 +8,14 @@ RxJS.
 
 ## Requirements
 
-- Node.js 18+
-- ESLint 9+
+- Node.js ^20.19.0, ^22.13.0 or >=24
 - Angular CLI project with flat config format (`eslint.config.mjs`)
+- Peer dependencies installed in your project (an `angular-eslint` setup already provides most of them):
+  - `eslint` 10
+  - `angular-eslint` 22
+  - `typescript-eslint` >=8.56
+  - `typescript` >=4.8.4 <6.1
+  - `rxjs` 7 (>=7.2)
 
 ## Quick start
 
@@ -98,4 +103,3 @@ Extends:
 | Rule                           | Value |
 | ------------------------------ | ----- |
 | rxjs-x/no-floating-observables | error |
-| rxjs-x/no-compat               | error |

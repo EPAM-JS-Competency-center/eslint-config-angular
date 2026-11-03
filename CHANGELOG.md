@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/EPAM-JS-Competency-center/eslint-config-angular/compare/v2.1.0...v3.0.0) (2026-11-03)
+
+### ⚠ BREAKING CHANGES
+
+- requires ESLint 10, angular-eslint 22, typescript-eslint
+
+> =8.56, TypeScript <6.1 and Node ^20.19.0 || ^22.13.0 || >=24 installed in
+> the consuming project. The rxjs-x/no-compat rule is no longer enabled.
+
+### Features
+
+- require ESLint 10 and angular-eslint 22, move tooling to peer deps ([4f9b90e](https://github.com/EPAM-JS-Competency-center/eslint-config-angular/commit/4f9b90e83269643f3ac97ecba734ac347463ca46))
+
+### Bug Fixes
+
+- type default export as Linter.Config array ([d357a40](https://github.com/EPAM-JS-Competency-center/eslint-config-angular/commit/d357a401cf2cd0cb2adb5dd1b42b58f6632560f4))
+
 ## [2.1.0](https://github.com/EPAM-JS-Competency-center/eslint-config-angular/compare/v2.0.0...v2.1.0) (2025-12-13)
 
 ### Features
